@@ -322,7 +322,7 @@ class SteamClient:
                 else:
                     while 0 != 10:
                         if "market_listing_price" in hui[i]:
-                            price = hui[i + 1].split("t")[8].split("\\")[0].rstrip("₸")
+                            price = hui[i + 1].split("t")[8].split("\\")[0].rstrip("₸").rstrip(" pуб.")
                             if "," in price:
                                 price = price.split(",")[0]+"."+price.split(",")[1]
                             break

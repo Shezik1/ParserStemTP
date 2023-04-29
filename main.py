@@ -83,7 +83,7 @@ i = 0
 while i != len(all_item):
     print()
     if how_buy[i] != 0:
-        print(f"{Fore.RED}Было потрачено на покупке {how_buy[i]} айтемов ({all_item[i]}) {price_buy[i]} средняя цена покупки {price_buy[i]/how_buy[i]}")
+        print(f"{Fore.RED}Было потрачено на покупке {how_buy[i]} айтемов ({all_item[i]}) {price_buy[i]} средняя цена покупки {price_buy[i]//how_buy[i]}")
     if how_sold[i] != 0:
-        print(f"{Fore.GREEN}Было получено на продаже {how_sold[i]} айтемов ({all_item[i]}) {price_sold[i]} средняя цена продажи {price_sold[i]/how_sold[i]}")
+        print(f"{Fore.GREEN}Было получено на продаже {how_sold[i]} айтемов ({all_item[i]}) {price_sold[i]} средняя цена продажи {price_sold[i]//how_sold[i]}")
     i += 1
